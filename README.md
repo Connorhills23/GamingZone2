@@ -1,4 +1,4 @@
-# GamingZone2
+GamingZone2
 
 At the top of the page we have the clock witch i did have to google/youtube to look at the code for js
 
