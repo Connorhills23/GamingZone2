@@ -72,6 +72,7 @@ function enableAutoplay() {
   vid.autoplay = true;
   vid.load();
 }
+
 let myAudio = document.querySelector("audio");
 
 myAudio.volume = 0.2;
