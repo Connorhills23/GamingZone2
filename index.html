@@ -3,73 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#127918 GamingZone &#127918</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
-    <title>&#127918; GamingZone &#127918;</title>
   </head>
+
   <body>
     <header>
+      <h1>&#127918; GamingZone &#127918;</h1>
       <h1>&#127918; Welcome to the GamingZone &#127918;</h1>
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
       <nav>
-        <a href="index.html">&#127918; Home &#127918;</a>
-        <a href="index2.html">&#127918; Video &#127918;</a>
-        <a href="index3.html">&#127918; PC Spec &#127918;</a>
-        <a href="index4.html">&#127918; Buy BeamNG &#127918;</a>
+        <nav>
+          <a href="index.html">&#127918; Home &#127918;</a>
+          <a href="index.html">&#127918; Video &#127918;</a>
+          <a href="index.html">&#127918; PC Spec &#127918;</a>
+          <a href="index.html">&#127918; Buy BeamNG &#127918;</a>
+        </nav>
       </nav>
     </header>
-
-    <main>
-      <section>
-        <div class="game-feature">
-          <h2>&#127918; BeamNG Banger Racing &#127918;</h2>
-          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-          <div class="box"></div>
-          <h21>Rear End Hits</h21>
-          <h211>Come Try?</h211>
-          <button onclick="topFunction()" id="pic1but" title="Go to top">Click To Buy!
-      </button>
-          <img
-            src="image/banger1.jpg"
-            alt="image"
-            height="1000px"
-            width="3000px"
-          />
-          <div class="box2"></div>
-              <h22>Buy Mods</h22>
-             <h222>Mods ARE NEEDED!</h222>
-             <button onclick="topFunction()" id="pic2but" title="Go to top">Click There Free!
-      </button>
-          <img
-            src="image/banger2.jpg"
-            alt="image"
-            height="1000px"
-            width="3000px"
-          />
-          <div class="box3"></div>
-          <h23>information</h23>
-             <h233>BeamNG</h233>
-             <button onclick="topFunction()" id="pic3but" title="Go to top">Click For Info!
-      </button>
-          <img
-            src="image/banger3.jpg"
-            alt="image"
-            height="1000px"
-            width="3000px"
-          />
+    <main id="top">
+      <section id="banger1" class="feature_image image-banger1">
+        <div class="post-meta">
+          <h2 class="post-meta__tagline">Rear End Hits</h2>
+          <h1 class="post-meta__heading">Come Try?</h1>
+          <a class="post-meta__more" href="#">Click To Buy!</a>
         </div>
-        <div class="game-feature"></div>
       </section>
-      </div>
+      <section id="banger2" class="feature_image image-banger2">
+        <div class="post-meta">
+          <h2 class="post-meta__tagline">Buy Mods</h2>
+          <h1 class="post-meta__heading">Mods ARE NEEDED!</h1>
+          <a class="post-meta__more" href="#">Click There Free!</a>
+        </div>
+      </section>
+      <section id="banger3" class="feature_image image-banger3">
+        <div class="post-meta">
+          <h2 class="post-meta__tagline">information</h2>
+          <h1 class="post-meta__heading">BeamNG</h1>
+          <a class="post-meta__more" href="#">Click For Info!</a>
+        </div>
+      </section>
     </main>
     <footer>
       <p id="output"></p>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         Click To Go Up
       </button>
-          <audio controls autoplay>
-    <source src="song/Bangersong.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+      <audio controls autoplay>
+        <source src="song/Bangersong.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
       <p>&#127918; 2026 GamingZone. All rights reserved. &#127918;</p>
     </footer>
   </body>
