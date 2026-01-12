@@ -1,76 +1,128 @@
-h1 {
-  background-color: #000000;
-  color: #ff9102;
-  padding: 10px 0;
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 40px;
-  top: -4%;
-  left: 32%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-h1:hover {
-  color: #02ffff;
+
+html {
+  scroll-behavior: smooth;
 }
-h1:active {
-  transform: scale(0.95);
+
+header {
+  position: fixed;
+  color: #17d4fe;
+  padding: 2.5rem 3rem;
+  background-color: #ff9102;
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
 h1:hover {
   text-shadow: 0 0 5px #02ffff, 0 0 15px #02ffff;
 }
 
-a {
-  color: #02ffff;
-  font-family: "Arial", sans-serif;
-  font-size: 20px;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+nav a {
   text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 a:hover {
   text-decoration: underline;
-}
-a:hover {
-  color: #ff9102;
+  color: #17d4fe;
 }
 
-h2 {
-  color: #ff9102;
-  font-family: "Arial", sans-serif;
-  text-align: center;
-  font-size: 30px;
+.feature_image {
+  position: relative;
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+
+  border-bottom: #fff 2px solid;
 }
-body {
-  background-color: rgb(0, 0, 0);
+
+.image-banger1 {
+  background-image: url("../image/banger1.jpg");
 }
+
+.image-banger2 {
+  background-image: url("../image/banger2.jpg");
+}
+
+.image-banger3 {
+  background-image: url("../image/banger3.jpg");
+}
+
+.post-meta {
+  position: absolute;
+  bottom: 10%;
+  left: 3rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 80%;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+}
+
+.post-meta__tagline {
+  text-transform: uppercase;
+  font-weight: 100;
+  opacity: 1;
+  font-size: 1.2rem;
+}
+
+.post-meta__heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.post-meta__more {
+  margin-top: 1.2rem;
+  display: inline-block;
+  max-width: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  opacity: 1;
+  color: #17d4fe;
+  border: 2px solid #ff9102;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background-color: #ff9102;
+}
+
+.post-meta__more:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: tomato;
+}
+
 footer {
-  background-color: #000000;
-  color: #ff9102;
+  background: #ff9102;
   text-align: center;
-  padding: 10px 0;
-  position: static;
-  width: 100%;
-  bottom: 10px;
-  font-family: "Arial", sans-serif;
-}
-nav a {
-  margin: 0 15px;
-  font-size: 18px;
-  text-align: center;
-  top: auto;
-}
-
-img {
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
-  border: 3px solid #ff9102;
-  border-radius: 10px;
-}
-img:hover {
-  border-color: #02ffff;
+  color: black;
+  padding: 40px;
 }
 
 .clock {
   position: absolute;
-  top: 5%;
+  top: 120%;
   left: 9%;
   transform: translateX(-50%) translateY(-50%);
   color: #17d4fe;
@@ -90,21 +142,19 @@ img:hover {
 .clock:hover {
   text-shadow: 0 0 20px #ff9102, 0 0 30px #ff9102, 0 0 40px #ff9102;
 }
-p2 {
-  position: static;
-  top: 50%;
-  left: 52%;
-  transform: translateX(-50%) translateY(-50%);
-  color: #17d4fe;
-  font-size: 30px;
-  font-family: Orbitron;
-  letter-spacing: 3px;
+
+audio {
+  display: block;
+  margin: 30px auto;
+  background-color: #ff9102;
+  border: 3px solid #02ffff;
+  border-radius: 20px;
 }
-a2 {
-  color: #02ffff;
-  font-family: "Arial", sans-serif;
-  font-size: 20px;
-  text-decoration: none;
+audio:hover {
+  border-color: #ff9102;
+}
+#myBtn:hover {
+  background-color: #02ffff; /* Add a dark-grey background on hover */
 }
 #myBtn {
   position: fixed; /* Fixed/sticky position */
@@ -119,161 +169,4 @@ a2 {
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #02ffff; /* Add a dark-grey background on hover */
-}
-
-.box {
-  width: 350px;
-  height: 150px;
-  border: 10px solid #02ffff;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ff9102;
-  position: absolute;
-  top: 950px;
-  left: 100px;
-}
-
-.box2 {
-  width: 350px;
-  height: 150px;
-  border: 10px solid #02ffff;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ff9102;
-  position: absolute;
-  top: 2000px;
-  left: 100px;
-}
-
-.box3 {
-  width: 350px;
-  height: 150px;
-  border: 10px solid #02ffff;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ff9102;
-  position: absolute;
-  top: 3000px;
-  left: 100px;
-}
-
-h21 {
-  text-transform: uppercase;
-  font-weight: 100;
-  opacity: 1;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 980px;
-  left: 150px;
-  color: black;
-}
-h22 {
-  text-transform: uppercase;
-  font-weight: 100;
-  opacity: 1;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 2030px;
-  left: 150px;
-  color: black;
-}
-
-h23 {
-  text-transform: uppercase;
-  font-weight: 100;
-  opacity: 1;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 3030px;
-  left: 150px;
-  color: black;
-}
-
-h211 {
-  text-transform: uppercase;
-  font-weight: 1000;
-  opacity: 1;
-  font-size: 35px;
-  position: absolute;
-  top: 1020px;
-  left: 150px;
-  color: black;
-}
-h222 {
-  text-transform: uppercase;
-  font-weight: 1000;
-  opacity: 1;
-  font-size: 35px;
-  position: absolute;
-  top: 2075px;
-  left: 130px;
-  color: black;
-}
-h233 {
-  text-transform: uppercase;
-  font-weight: 1000;
-  opacity: 1;
-  font-size: 35px;
-  position: absolute;
-  top: 3065px;
-  left: 150px;
-  color: black;
-}
-#pic1but {
-  position: absolute; /* Fixed/sticky position */
-  bottom: -215px; /* Place the button at the bottom of the page */
-  left: 240px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #02ffff; /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#pic2but {
-  position: absolute; /* Fixed/sticky position */
-  bottom: -1260px; /* Place the button at the bottom of the page */
-  left: 240px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #02ffff; /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-#pic3but {
-  position: absolute; /* Fixed/sticky position */
-  bottom: -2260px; /* Place the button at the bottom of the page */
-  left: 240px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #02ffff; /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-audio {
-  display: block;
-  margin: 30px auto;
-  background-color: #ff9102;
-  border: 3px solid #02ffff;
-  border-radius: 20px;
-}
-audio:hover {
-  border-color: #ff9102;
 }
